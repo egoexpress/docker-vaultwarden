@@ -1,0 +1,18 @@
+services:
+
+  app:
+    image: vaultwarden/server:1.31.0
+    restart: always
+    environment:
+      - VIRTUAL_PORT=80
+    volumes:
+      - data:/data
+    networks:
+      frontend:
+
+networks:
+  frontend:
+
+volumes:
+  data:
+
