@@ -1,7 +1,7 @@
 services:
 
   app:
-    image: vaultwarden/server:1.35.4
+    image: vaultwarden/server:1.35.5
     restart: always
     environment:
       - VIRTUAL_PORT=80
